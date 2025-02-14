@@ -1,0 +1,29 @@
+<!-- This is the first Lesson -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+     
+    <!-- External Library links -->
+    <script src="https://bn-musa.bewconnect.com/react.js"></script>
+    <script src="https://bn-musa.bewconnect.com/react-dom.js"></script>
+ 
+    <script src="https://bn-musa.bewconnect.com/babel.js"></script>
+
+    <!-- Script below convert/translate JSX to Normal JavaScript -->
+    <script type="text/babel">
+
+      const div = <div>
+                    <button>button</button>
+                    <p>This is a paragraph</p>
+                 </div>
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render('Welcome to bewconnect React Course');
+    </script>
+
+  </body>
+</html>
