@@ -1,0 +1,30 @@
+<!-- 1a. Achiving cart basic design as below -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+     
+
+    <script src="https://bn-musa.bewconnect.com/react.js"></script>
+    <script src="https://bn-musa.bewconnect.com/react-dom.js"></script>
+ 
+    <script src="https://bn-musa.bewconnect.com/babel.js"></script>
+
+    <!-- 1a. Answer -->
+    <script type="text/babel">
+      const  price = "R386.90";
+      const div = <div>
+                   <p>Adidas Bag</p>
+                   <p>Price: {price}</p>
+                   <button>Add to Cart</button>
+                 </div> 
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(div);
+    </script>
+
+  </body>
+</html>
